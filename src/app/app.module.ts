@@ -7,7 +7,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import 'hammerjs';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
-
+import swipe from 'angular-swipe';
 
 @NgModule({
   declarations: [
