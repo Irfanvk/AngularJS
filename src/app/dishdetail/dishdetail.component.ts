@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Dish } from '../shared/dish';
+
 const DISH = {
   name: 'Uthappizza',
   image: '/assets/images/uthappizza.png',
@@ -47,12 +49,13 @@ const DISH = {
   styleUrls: ['./dishdetail.component.scss']
 })
 export class DishdetailComponent implements OnInit {
-
-    dish = DISH;
-
-    constructor() { }
-
-    ngOnInit() {
-    }
-
+  dish = DISH;
+  
+  constructor(){
+  }
+  
+  ngOnInit() {
+  }
+  
+  
 }
