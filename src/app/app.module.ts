@@ -9,14 +9,13 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import swipe from 'angular-swipe';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
-import { DishdetailsComponent } from './dishdetails/dishdetails.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    DishdetailComponent,
-    DishdetailsComponent
+    DishdetailComponent
   ],
   imports: [
     BrowserModule,
