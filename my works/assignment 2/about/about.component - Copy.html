@@ -54,15 +54,25 @@
       </div>
 
 
-      <div fxFlex>
-          <h2>Corporate Leadership</h2>
-            <md-list >
-              <md-list-item *ngFor="let leader of leaders">
-                <img md-list-avatar src="{{leader.image}}" alt="{{leader.name}}">
-                <p md-line> {{leader.name}} </p>
-                <p md-line> {{leader.designation}}  </p>
-                <p md-line> {{leader.description}}  </p>
-              </md-list-item>
-          </md-list>
-        </div>
+        <div fxFlex class="container">
+
+        <div *ngIf="leaders" >
+          <h2>Corporate Leadership</h2>         
+              <md-list >
+                <md-list-item  *ngFor="let leader of leaders" class="md-2-line"  style="padding: 50px 0px 50px 0px">
+                  
+                  <img class="md-avatar" style="border-radius:50%!important;width:80px;padding: 20px;" src={{leader.image}} alt={{leader.name}} >
+                  <div fxFlex="90" class = "md-list-item-text compact">
+                  <h4 md-line>{{leader.name}} <small>{{leader.abbr}}</small></h4>
+                  <h4 md-line>{{leader.designation}}</h4>
+                  <p md-line>{{leader.description}}</p>
+                  <md-divider ng-if = "!$last"></md-divider>
+                  </div>
+                  
+                </md-list-item>
+                
+              </md-list>
+          </div>
+          </div>
+       
 </div>
